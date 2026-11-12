@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marblism Atlanta</title>
-<meta name="description" content="Marblism Atlanta activation: billboards paid with Brex points and entrepreneur hangouts in local coffee shops with Buffy Payne and top partners. Max spend $28,000.">
+<meta name="description" content="Marblism Atlanta: 3 months of billboards paid with Brex points and coffee shop hangouts with Buffy Payne. $27,500 of a $28,000 max.">
 <meta name="theme-color" content="#fbf9f3">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,83 +14,53 @@
   :root{
     --display:"Slussen","Inter",sans-serif;
     --sans:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
-    --paper:#fbf9f3;
-    --ink:#111110;
-    --muted:#716e66;
-    --line:#e4e0d3;
-    --yellow:#ffd400;
-    --blue:#3a5bd9;
-    --green:#2f8a57;
+    --paper:#fbf9f3;--ink:#111110;--muted:#716e66;--line:#e4e0d3;--yellow:#ffd400;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-  ::selection{background:var(--yellow);color:var(--ink)}
-  .wrap{max-width:760px;margin:0 auto;padding:32px 20px 64px}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--yellow)}
+  .wrap{max-width:720px;margin:0 auto;padding:32px 20px 64px}
 
-  .top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:48px}
-  .top img{height:22px;width:auto;display:block}
+  .top{display:flex;align-items:center;justify-content:space-between;margin-bottom:48px}
+  .top img{height:22px;display:block}
   .top span{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
 
   h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(44px,9vw,84px);line-height:.95;margin-bottom:16px}
-  .sub{font-size:18px;font-weight:500;max-width:600px;margin-bottom:20px}
-  .facts{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
-  .facts span{font-size:12px;font-weight:600;border:1px solid var(--ink);border-radius:999px;padding:4px 12px}
-  .facts span:first-child{background:var(--yellow)}
+  .sub{font-size:18px;font-weight:500;margin-bottom:32px}
 
-  /* budget bar */
-  .bar{display:flex;height:44px;border:2px solid var(--ink);margin-bottom:10px}
-  .bar div{display:flex;align-items:center;padding:0 10px;font-size:12px;font-weight:700;white-space:nowrap;overflow:hidden;border-right:2px solid var(--ink)}
-  .bar div:last-child{border-right:0}
-  .b1{background:var(--ink);color:var(--yellow)}
-  .b2{background:var(--yellow)}
-  .b3{background:var(--paper)}
-  .legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--muted);margin-bottom:56px}
-  .legend i{display:inline-block;width:10px;height:10px;border:1px solid var(--ink);margin-right:6px;vertical-align:-1px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--ink);margin-bottom:56px}
+  .stats div{padding:14px 14px 12px;border-right:2px solid var(--ink)}
+  .stats div:last-child{border-right:0}
+  .stats div:first-child{background:var(--ink);color:var(--yellow)}
+  .stats strong{display:block;font-family:var(--display);font-weight:900;font-size:40px;line-height:1}
+  .stats small{font-size:12px;font-weight:600}
 
-  section{margin-bottom:56px}
+  section{margin-bottom:52px}
   h2{display:flex;align-items:center;gap:12px;font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(28px,5vw,40px);line-height:1;padding-bottom:12px;border-bottom:2px solid var(--ink);margin-bottom:6px}
   h2 .n{font-size:.7em;background:var(--ink);color:var(--yellow);padding:4px 8px 2px;line-height:1}
-  .lead{margin:14px 0 4px;font-size:15.5px}
-  .note{color:var(--muted);font-size:13.5px;margin-top:12px}
+  h2 .cost{margin-left:auto;font-size:.75em;background:var(--yellow);padding:4px 8px 2px}
 
   ul{list-style:none}
   li{position:relative;padding:11px 0 11px 28px;border-bottom:1px solid var(--line)}
   li::before{content:"→";position:absolute;left:4px;top:11px;font-weight:700}
-  li b{font-weight:700}
 
-  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14.5px}
-  th,td{text-align:left;padding:10px 6px;border-bottom:1px solid var(--line);vertical-align:top}
-  th{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600;border-bottom:1px solid var(--ink)}
-  td.q{white-space:nowrap;color:var(--muted)}
-  td.c{text-align:right;white-space:nowrap;font-weight:600;font-variant-numeric:tabular-nums}
-  th.c{text-align:right}
-  tr.sub td{font-weight:700;border-bottom:2px solid var(--ink)}
-  tr.sub td.c{font-weight:800}
-  .tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.04em;background:var(--yellow);border:1px solid var(--ink);border-radius:999px;padding:0 7px;margin-left:6px;vertical-align:1px}
+  .months{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+  .months div{border:1px solid var(--ink);padding:12px 12px 10px;font-size:14px;line-height:1.45}
+  .months b{display:block;font-family:var(--display);font-weight:900;font-size:24px;text-transform:uppercase;line-height:1;margin-bottom:6px}
 
-  .total{display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--ink);margin-top:20px}
-  .total div{padding:14px 14px 12px;border-right:2px solid var(--ink)}
-  .total div:last-child{border-right:0}
-  .total div:first-child{background:var(--ink);color:var(--paper)}
-  .total div:first-child small{color:#c9c5ba}
-  .total small{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
-  .total strong{font-family:var(--display);font-weight:900;font-size:34px;line-height:1.1}
-  .total div:first-child strong{color:var(--yellow)}
-
-  .weeks{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
-  .weeks div{border:1px solid var(--ink);padding:10px 10px 8px;font-size:13px;line-height:1.4}
-  .weeks b{display:block;font-family:var(--display);font-weight:900;font-size:22px;text-transform:uppercase;line-height:1}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  td{padding:11px 4px;border-bottom:1px solid var(--line)}
+  td small{display:block;color:var(--muted);font-size:12.5px}
+  td.c{text-align:right;white-space:nowrap;font-weight:700;font-variant-numeric:tabular-nums}
+  tr.t td{border-top:2px solid var(--ink);border-bottom:0;font-family:var(--display);font-weight:900;font-size:28px;text-transform:uppercase;padding-top:14px}
+  .note{color:var(--muted);font-size:13.5px;margin-top:10px}
 
   footer{border-top:1px solid var(--ink);padding-top:18px;font-size:12.5px;color:var(--muted)}
 
   @media (max-width:600px){
-    .total{grid-template-columns:1fr}
-    .total div{border-right:0;border-bottom:2px solid var(--ink)}
-    .total div:last-child{border-bottom:0}
-    .weeks{grid-template-columns:repeat(2,1fr)}
-    td.q{white-space:normal}
-    th,td{padding:9px 4px}
-    .bar div{font-size:11px;padding:0 6px}
+    .stats strong{font-size:30px}
+    .stats div{padding:10px}
+    .months{grid-template-columns:1fr}
   }
 </style>
 </head>
@@ -99,89 +69,58 @@
 
   <div class="top">
     <img src="images/marblism-logo.png" alt="Marblism">
-    <span>Atlanta activation</span>
+    <span>Atlanta · 3 months</span>
   </div>
 
   <h1>Marblism takes Atlanta</h1>
-  <p class="sub">Four weeks. Billboards on the busiest roads in the city, paid with Brex points. Every week, an entrepreneur hangout in a local coffee shop, hosted by Buffy Payne and our top partners.</p>
-  <div class="facts">
-    <span>Max spend $28,000</span>
-    <span>4 weeks</span>
-    <span>4 hangouts · ~200 founders</span>
-    <span>Dates TBD</span>
-  </div>
+  <p class="sub">A billboard on the highway, paid with Brex points. Every two weeks, a coffee shop hangout for founders, led by Buffy Payne.</p>
 
-  <div class="bar" aria-label="Budget split">
-    <div class="b1" style="flex:11000">Billboards $11K</div>
-    <div class="b2" style="flex:13600">Hangouts $13.6K</div>
-    <div class="b3" style="flex:2900">$2.9K</div>
-  </div>
-  <div class="legend">
-    <span><i style="background:var(--ink)"></i>Billboards (Brex points)</span>
-    <span><i style="background:var(--yellow)"></i>Coffee shop hangouts</span>
-    <span><i></i>Promo + buffer</span>
+  <div class="stats">
+    <div><strong>$27.5K</strong><small>of $28K max</small></div>
+    <div><strong>3</strong><small>months</small></div>
+    <div><strong>6</strong><small>hangouts · ~300 founders</small></div>
   </div>
 
   <section>
-    <h2><span class="n">01</span><span>Billboards</span></h2>
-    <p class="lead">Marblism on the road into Midtown and Downtown for 4 weeks. One message: your AI employees, plus a QR code that books a seat at the next hangout.</p>
+    <h2><span class="n">01</span><span>Billboard</span><span class="cost">$10.5K</span></h2>
     <ul>
-      <li><b>2 digital bulletins</b> on the Downtown Connector (I-75/85) or I-85 near Midtown. Rotating spot, 4 weeks.</li>
-      <li><b>4 street-level digital posters</b> near the 4 hangout coffee shops, so the billboard and the hangout live on the same block.</li>
-      <li><b>Paid with Brex points.</b> We put the billboard charges on the Brex card and redeem points as statement credit against them. Cash out of pocket drops by up to $11,000.</li>
-      <li><b>Creative made in house</b> with Higgsfield and Sonny. No agency fee.</li>
+      <li>1 digital billboard on I-75/85 into Midtown, 3 months.</li>
+      <li>Paid on the Brex card, covered with Brex points.</li>
+      <li>QR code on the ad: sign up for the next hangout.</li>
     </ul>
-    <p class="note">Vendors to quote: Outfront, Lamar and Clear Channel Outdoor (all sell Atlanta inventory). Confirm the points balance and the redemption rate in the Brex dashboard before booking.</p>
   </section>
 
   <section>
-    <h2><span class="n">02</span><span>Entrepreneur hangouts</span></h2>
-    <p class="lead">One hangout per week in a local Atlanta coffee shop. Free coffee, real talk about running a business with AI, and a live Marblism demo. About 50 business owners each.</p>
-    <div class="weeks">
-      <div><b>Week 1</b>Midtown<br>Host: Buffy Payne</div>
-      <div><b>Week 2</b>Old Fourth Ward<br>Host: top partner</div>
-      <div><b>Week 3</b>West Midtown<br>Host: top partner</div>
-      <div><b>Week 4</b>Buckhead<br>Closing night with Buffy + partners</div>
+    <h2><span class="n">02</span><span>Hangouts</span><span class="cost">$13.5K</span></h2>
+    <ul>
+      <li>6 hangouts in local coffee shops, one every two weeks.</li>
+      <li>About 50 business owners each: free coffee, a short talk, a live Marblism demo.</li>
+      <li>Buffy Payne (FEW ATL) leads. Our top partners co-host.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="n">03</span><span>The 3 months</span></h2>
+    <div class="months">
+      <div><b>Month 1</b>Billboard goes up.<br>Hangouts 1 + 2, Buffy opens.</div>
+      <div><b>Month 2</b>Hangouts 3 + 4, partners host.</div>
+      <div><b>Month 3</b>Hangouts 5 + 6.<br>Big closing with Buffy + partners.</div>
     </div>
-    <ul style="margin-top:14px">
-      <li><b>Buffy Payne (FEW ATL) leads the activation.</b> She opens week 1, closes week 4 and brings her Atlanta founder network.</li>
-      <li><b>Top partners host weeks 2 and 3.</b> Atlanta-based members of the Affiliate Collective, each bringing their own audience.</li>
-      <li><b>Format, 3 hours:</b> coffee and networking, 20 minute talk, live Marblism demo, swag, then hangout.</li>
-      <li><b>Who gets in:</b> business owners only. RSVP with your business name, billboard QR or partner link.</li>
-      <li><b>Content:</b> a creator films every hangout. Clips go to Marblism and partner socials the same week.</li>
-    </ul>
   </section>
 
   <section>
-    <h2><span class="n">03</span><span>Quote</span></h2>
-    <p class="lead">Every line, estimated. Final numbers come from vendor quotes.</p>
+    <h2><span class="n">04</span><span>Quote</span></h2>
     <table>
-      <thead><tr><th>Item</th><th>Qty</th><th class="c">Cost</th></tr></thead>
-      <tbody>
-        <tr><td>Digital bulletin, I-75/85 or I-85 <span class="tag">Brex points</span></td><td class="q">2 × 4 wks × $4,000</td><td class="c">$8,000</td></tr>
-        <tr><td>Street-level digital poster near each venue <span class="tag">Brex points</span></td><td class="q">4 × 4 wks × $750</td><td class="c">$3,000</td></tr>
-        <tr><td>Billboard creative (in house)</td><td class="q">Higgsfield + Sonny</td><td class="c">$0</td></tr>
-        <tr class="sub"><td>Billboards</td><td></td><td class="c">$11,000</td></tr>
-
-        <tr><td>Coffee shop buyout or private area, 3 hrs</td><td class="q">4 × $800</td><td class="c">$3,200</td></tr>
-        <tr><td>Coffee and pastries, ~50 people</td><td class="q">4 × $600</td><td class="c">$2,400</td></tr>
-        <tr><td>Host fee: Buffy Payne + top partners</td><td class="q">4 × $750</td><td class="c">$3,000</td></tr>
-        <tr><td>Photo and video creator</td><td class="q">4 × $500</td><td class="c">$2,000</td></tr>
-        <tr><td>Swag from shop.marblism.com (tees, caps)</td><td class="q">4 × 50 × $15</td><td class="c">$3,000</td></tr>
-        <tr class="sub"><td>Hangouts</td><td></td><td class="c">$13,600</td></tr>
-
-        <tr><td>Meta ads, Atlanta geo, to fill RSVPs</td><td class="q">4 wks</td><td class="c">$1,500</td></tr>
-        <tr><td>Buffer (travel, signage, extras)</td><td class="q">~5%</td><td class="c">$1,400</td></tr>
-        <tr class="sub"><td>Promo + buffer</td><td></td><td class="c">$2,900</td></tr>
-      </tbody>
+      <tr><td>Digital billboard, I-75/85<small>3 × $3,500 a month · Brex points</small></td><td class="c">$10,500</td></tr>
+      <tr><td>Coffee shop space + coffee<small>6 × $1,000</small></td><td class="c">$6,000</td></tr>
+      <tr><td>Host fee, Buffy + partners<small>6 × $500</small></td><td class="c">$3,000</td></tr>
+      <tr><td>Swag from shop.marblism.com<small>6 × $500</small></td><td class="c">$3,000</td></tr>
+      <tr><td>Photo + video of each hangout<small>6 × $250</small></td><td class="c">$1,500</td></tr>
+      <tr><td>Meta ads in Atlanta to fill seats<small>3 months</small></td><td class="c">$2,500</td></tr>
+      <tr><td>Buffer</td><td class="c">$1,000</td></tr>
+      <tr class="t"><td>Total</td><td class="c">$27,500</td></tr>
     </table>
-
-    <div class="total">
-      <div><small>Total</small><strong>$27,500</strong></div>
-      <div><small>Covered by Brex points</small><strong>up to $11,000</strong></div>
-      <div><small>Cash needed</small><strong>~$16,500</strong></div>
-    </div>
-    <p class="note">$500 under the $28,000 cap. If the Brex points balance is lower than $11,000, the difference comes out of cash and the total stays the same.</p>
+    <p class="note">Brex points cover up to $10,500, so cash needed is about $17,000. Estimates until vendors quote.</p>
   </section>
 
   <footer>Marblism · Atlanta activation · 2026</footer>
